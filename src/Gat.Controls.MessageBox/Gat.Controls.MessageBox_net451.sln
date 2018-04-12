@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gat.Controls.MessageBox_net451", "Gat.Controls.MessageBox\Gat.Controls.MessageBox_net451.csproj", "{9E6739DC-9D6F-49BC-857A-C567709094D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gat.Controls.MessageBox_net451.TestApplication", "Gat.Controls.TestApplication\Gat.Controls.MessageBox_net451.TestApplication.csproj", "{DF877111-B703-404E-98AE-DBB359465672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E6739DC-9D6F-49BC-857A-C567709094D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6739DC-9D6F-49BC-857A-C567709094D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6739DC-9D6F-49BC-857A-C567709094D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6739DC-9D6F-49BC-857A-C567709094D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF877111-B703-404E-98AE-DBB359465672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF877111-B703-404E-98AE-DBB359465672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF877111-B703-404E-98AE-DBB359465672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF877111-B703-404E-98AE-DBB359465672}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
