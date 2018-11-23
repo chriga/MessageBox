@@ -50,6 +50,24 @@ namespace Gat.Controls
 			_Window.Title = e.Caption;
 			_Window.ShowInTaskbar = false;
 			_Window.Topmost = true;
+			_Window.PreviewKeyDown += (se, ev) =>
+			{
+				if (ev.Key == System.Windows.Input.Key.C && System.Windows.Input.Keyboard.Modifiers == System.Windows.Input.ModifierKeys.Control)
+				{
+				    var vm = (Gat.Controls.MessageBoxViewModel)this.FindResource("ViewModel");
+				    Clipboard.SetText($"{vm.Caption}\r\n" +
+					$"{new string('-',27)}\r\n" +
+					$"{vm.Message}\r\n" +
+					$"{new string('-', 27)}\r\n" +
+					string.Format("{0}{1}{2}{3}", Ok.Visibility == Visibility.Visible ? $"{Ok.Content}   " : "", Yes.Visibility == Visibility.Visible ? $"{Yes.Content}   " : "", No.Visibility == Visibility.Visible ? $"{No.Content}   " : "", Cancel.Visibility == Visibility.Visible ? $"{Cancel.Content}   " : "") + "\r\n" +
+					$"{new string('-', 27)}\r\n");
+				}
+				//else if (ev.Key == System.Windows.Input.Key.Escape && System.Windows.Input.Keyboard.Modifiers == System.Windows.Input.ModifierKeys.None)
+				//{
+				//    _Window.Close();
+				//}
+			};
+
 
 			switch (e.Position)
 			{
